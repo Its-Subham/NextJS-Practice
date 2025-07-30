@@ -1,5 +1,5 @@
-export default function Docs({ params }: { params: { slug: string[] } }) {
-  const { slug } = params;
+export default async function Docs({ params }: { params: { slug: string[] } }) {
+  const { slug } = await params;
   // if (slug.length === 0) {
   //   return <h1>Select a doc to get started</h1>;
   // }
